@@ -6,20 +6,21 @@
 //  Copyright © 2016 WEI XIE. All rights reserved.
 //
 
-#import "MainView.h"
+#import "MTPMainView.h"
+#import "MTPParsingManager.h"
 
-@implementation MainView 
+
+@implementation MTPMainView
+
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    [[NSColor blackColor] setFill];
+    [[NSColor whiteColor] setFill];
     NSRectFill(dirtyRect);
     [super drawRect:dirtyRect];
-    // Drawing code here.
-    
     [self registerForDraggedTypes:@[(NSString*)kUTTypeItem]];
-    NSLog(@"initWithFrame");
-
+    
+    
 }
 
 
@@ -44,13 +45,17 @@
     NSPasteboard *pboard = [sender draggingPasteboard];
     if ([[pboard types] containsObject:NSURLPboardType]) {
         NSURL *fileURL = [NSURL URLFromPasteboard:pboard];
-        NSLog(@"Path: %@", [self convertPath:fileURL]); 
+        NSLog(@"Reading file from path: %@", fileURL.path);
+        MTPParsingManager *manager = [MTPParsingManager sharedInstance];
+        if(![manager hanldeDropedFileWithPath:fileURL.path]) {
+            NSAlert *alert = [[NSAlert alloc] init];
+            [alert setMessageText:@"Invalid Format"];
+            [alert setInformativeText:@"Invlid torrent file provided."];
+            [alert addButtonWithTitle:@"Ok"];
+            [alert runModal];
+        };
     }
     return YES;
-}
-
-- (NSString *)convertPath:(NSURL *)url {
-    return url.path;
 }
 
 @end

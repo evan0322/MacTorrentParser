@@ -1,5 +1,5 @@
 //
-//  MainView.h
+//  MTPMainView.h
 //  MacTorrentParser
 //
 //  Created by WEI XIE on 2016-11-12.
@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MainView : NSView <NSDraggingDestination>
+@interface MTPMainView : NSView
 
 @end

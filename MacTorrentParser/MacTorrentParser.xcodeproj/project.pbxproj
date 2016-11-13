@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		B52E22191DD754F800591C16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E22181DD754F800591C16 /* AppDelegate.m */; };
 		B52E221C1DD754F800591C16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E221B1DD754F800591C16 /* main.m */; };
-		B52E221F1DD754F800591C16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E221E1DD754F800591C16 /* ViewController.m */; };
+		B52E221F1DD754F800591C16 /* MTPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E221E1DD754F800591C16 /* MTPMainViewController.m */; };
 		B52E22211DD754F800591C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52E22201DD754F800591C16 /* Assets.xcassets */; };
 		B52E22241DD754F800591C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52E22221DD754F800591C16 /* Main.storyboard */; };
-		B52E22301DD7585900591C16 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E222F1DD7585900591C16 /* MainView.m */; };
+		B52E22301DD7585900591C16 /* MTPMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B52E222F1DD7585900591C16 /* MTPMainView.m */; };
+		B5A7B0811DD8B3D90092BE85 /* MTPParsingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A7B0801DD8B3D90092BE85 /* MTPParsingManager.m */; };
+		B5A7B0871DD8F1F50092BE85 /* MTPBDecodingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A7B0861DD8F1F50092BE85 /* MTPBDecodingManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,13 +22,18 @@
 		B52E22171DD754F800591C16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B52E22181DD754F800591C16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B52E221B1DD754F800591C16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B52E221D1DD754F800591C16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B52E221E1DD754F800591C16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B52E221D1DD754F800591C16 /* MTPMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTPMainViewController.h; sourceTree = "<group>"; };
+		B52E221E1DD754F800591C16 /* MTPMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTPMainViewController.m; sourceTree = "<group>"; };
 		B52E22201DD754F800591C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52E22231DD754F800591C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B52E22251DD754F800591C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B52E222E1DD7585900591C16 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		B52E222F1DD7585900591C16 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		B52E222E1DD7585900591C16 /* MTPMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPMainView.h; sourceTree = "<group>"; };
+		B52E222F1DD7585900591C16 /* MTPMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPMainView.m; sourceTree = "<group>"; };
+		B5A7B07F1DD8B3D90092BE85 /* MTPParsingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPParsingManager.h; sourceTree = "<group>"; };
+		B5A7B0801DD8B3D90092BE85 /* MTPParsingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPParsingManager.m; sourceTree = "<group>"; };
+		B5A7B0821DD8BB540092BE85 /* MTPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPConstants.h; sourceTree = "<group>"; };
+		B5A7B0851DD8F1F50092BE85 /* MTPBDecodingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPBDecodingManager.h; sourceTree = "<group>"; };
+		B5A7B0861DD8F1F50092BE85 /* MTPBDecodingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPBDecodingManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +66,10 @@
 		B52E22161DD754F800591C16 /* MacTorrentParser */ = {
 			isa = PBXGroup;
 			children = (
-				B52E222E1DD7585900591C16 /* MainView.h */,
-				B52E222F1DD7585900591C16 /* MainView.m */,
-				B52E22171DD754F800591C16 /* AppDelegate.h */,
-				B52E22181DD754F800591C16 /* AppDelegate.m */,
-				B52E221D1DD754F800591C16 /* ViewController.h */,
-				B52E221E1DD754F800591C16 /* ViewController.m */,
+				B5A7B0821DD8BB540092BE85 /* MTPConstants.h */,
+				B5A7B07E1DD8B3170092BE85 /* VIew */,
+				B5A7B07D1DD8B30E0092BE85 /* ViewController */,
+				B5A7B07C1DD8B3030092BE85 /* Manager */,
 				B52E22201DD754F800591C16 /* Assets.xcassets */,
 				B52E22221DD754F800591C16 /* Main.storyboard */,
 				B52E22251DD754F800591C16 /* Info.plist */,
@@ -79,6 +84,37 @@
 				B52E221B1DD754F800591C16 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5A7B07C1DD8B3030092BE85 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B5A7B07F1DD8B3D90092BE85 /* MTPParsingManager.h */,
+				B5A7B0801DD8B3D90092BE85 /* MTPParsingManager.m */,
+				B5A7B0851DD8F1F50092BE85 /* MTPBDecodingManager.h */,
+				B5A7B0861DD8F1F50092BE85 /* MTPBDecodingManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		B5A7B07D1DD8B30E0092BE85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B52E22171DD754F800591C16 /* AppDelegate.h */,
+				B52E22181DD754F800591C16 /* AppDelegate.m */,
+				B52E221D1DD754F800591C16 /* MTPMainViewController.h */,
+				B52E221E1DD754F800591C16 /* MTPMainViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B5A7B07E1DD8B3170092BE85 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				B52E222E1DD7585900591C16 /* MTPMainView.h */,
+				B52E222F1DD7585900591C16 /* MTPMainView.m */,
+			);
+			name = VIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52E221F1DD754F800591C16 /* ViewController.m in Sources */,
-				B52E22301DD7585900591C16 /* MainView.m in Sources */,
+				B5A7B0811DD8B3D90092BE85 /* MTPParsingManager.m in Sources */,
+				B52E221F1DD754F800591C16 /* MTPMainViewController.m in Sources */,
+				B52E22301DD7585900591C16 /* MTPMainView.m in Sources */,
 				B52E221C1DD754F800591C16 /* main.m in Sources */,
+				B5A7B0871DD8F1F50092BE85 /* MTPBDecodingManager.m in Sources */,
 				B52E22191DD754F800591C16 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +340,7 @@
 				B52E222A1DD754F800591C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
