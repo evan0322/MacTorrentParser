@@ -35,7 +35,7 @@
     if (!torrent) {
         return NO;
     }
-    
+    NSLog(@"The raw metadata for the torrent is %@", torrent);
     
     NSMutableDictionary *info = torrent[@"info"];
     if(info[@"files"]) {
